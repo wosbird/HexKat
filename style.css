@@ -1,0 +1,60 @@
+.header {
+  background-color: #000000; 
+  color: #ffffff; 
+  font-family: Hill House; 
+  font-size: 160px; 
+  text-align: center; 
+}
+
+.nav {
+  background-color: #000000; 
+  color: #ffffff; 
+  font-family: Hill House; 
+  font-size: 44px;
+}
+
+.nav li {
+  display: inline; 
+  padding: 40px; 
+}
+
+.html {
+  background-image: gradient-linear (bottom, #05141c, #74d6b7, #05141c);
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.about { 
+  display: flex;
+  justify-content: right;
+  width: 40%;
+  border: 2px solid white;
+  padding: 10px;
+  font-family: futura PT; 
+  font-weight: book;
+  font-size: 18px;
+  color: white;
+  background-color: #000000;
+}
+
+.subheader {
+  font-family: Hill House;
+  font-size: 40px;
+}
+
+.project1 {
+  width: 40%;
+  border: 2px solid white;
+  padding: 10px;
+  font-family: futura PT; 
+  font-weight: book;
+  font-size: 18px;
+  color: white;
+  background-color: #000000; 
+  float: right;
+}
+
+.project1_img {
+  height: 80px;
+}
+
