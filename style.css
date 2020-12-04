@@ -2,20 +2,20 @@
 body {
   background-image: linear-gradient(180deg, rgba(116,214, 183,1) 0%, rgba(115,220,198,1) 50%, rgba(10,39,33,1) 100%);
   background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
 }
 
 .header {
-display: block;
-margin-left: auto;
-margin-right: auto;
+background-color: black;
 width: 100%;
-padding: -10px;
+margin-top: -10px;
+height: 600px;
 }
-
-
 
 .nav {
   background-color: #000000; 
+  height: 50px;
   color: #ffffff; 
   font-family: Hill House; 
   font-size: 44px;
@@ -23,43 +23,82 @@ padding: -10px;
   margin-right: auto;
   width: 100%;
   text-align: center;
+  margin-top: -60px;
 }
-
 
 .nav li {
   display: inline; 
   padding: 40px; 
+
 }
 
+.about{
+  width: 100%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-areas: 30% 70%;
+  grid-template-areas: "winona about";
+}
 
-.about { 
-  width: 40%;
-  border: 2px solid white;
-  padding: 10px;
+#about { 
   font-family: futura PT; 
-  font-size: 18px;
+  font-size: 24px;
   color: white;
-  background-color: #000000;
+  text-align: left;
+  margin-right: 200px;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+#winona {
+  margin-left: 200px;
 }
 
 .subheader {
   font-family: Hill House;
   font-size: 40px;
+  text-align: center;
+  color: white;
 }
 
-.project1 {
-  width: 40%;
-  border: 2px solid white;
+#projecttitle{
+  font-family: Hill House;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+#projectdescript {
   padding: 10px;
   font-family: futura PT; 
-  font-weight: book;
-  font-size: 18px;
+  font-size: 24px;
   color: white;
-  background-color: #000000; 
-  float: right;
+
 }
 
-.project1_img {
-  height: 80px;
+.project1{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "dasamockup dasamockup projecttitle"
+  "dasamockup dasamockup projectdescript"
+  "dasamockup dasamockup projectdescript";
+  background-color: rgba(0,0,0, 0.4);
+  width: 100%;
+  height: 600px;
+  justify-content: baseline;
 }
 
+#dasamockup {
+  background-image: url("../HexKat/images/dasamockup1.png");
+  width: auto;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.project1area{
+  display:grid;
+
+}

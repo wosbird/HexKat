@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="598" viewBox="0 0 1920 598">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-LogoHeader);
+      }
+
+      .cls-2 {
+        stroke: #707070;
+      }
+
+      .cls-3, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 200px;
+        font-family: HillHouse, Hill House;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-LogoHeader">
+      <rect width="1920" height="598"/>
+    </clipPath>
+  </defs>
+  <g id="LogoHeader" class="cls-1">
+    <rect class="cls-6" width="1920" height="598"/>
+    <g id="Rectangle_1" data-name="Rectangle 1" class="cls-2">
+      <rect class="cls-4" width="1920" height="597"/>
+      <rect class="cls-5" x="0.5" y="0.5" width="1919" height="596"/>
+    </g>
+    <text id="Hex" class="cls-3" transform="translate(418 464)"><tspan x="0" y="0">Hex</tspan></text>
+    <image id="HexKat_Heavy" width="364.312" height="400" transform="translate(781.383 111)" xlink:href="LogoHeader-image.png"/>
+    <text id="Kat" class="cls-3" transform="translate(1163 463)"><tspan x="0" y="0">Kat</tspan></text>
+  </g>
+</svg>
