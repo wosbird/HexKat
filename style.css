@@ -303,6 +303,16 @@ grid-template-areas: "hex head kat";
 
 @font-face {
   font-family: "Hill House";
-  src: url("css/fonts/HillHouseMedium-axBgg.otf") format("opentype"),
+  src: url("../HexKat/fonts/HillHouseMedium-axBgg.otf") format("opentype"),
  
+  }
+
+  @font-face{
+    font-family: "futura PT";
+    src: url("../HexKat/fonts/FuturaPTBook.otf") format("opentype")
+  }
+
+  @font-face{
+    font-family: "futura PT";
+    src: url("../HexKat/fonts/FuturaPTlight.otf") format("opentype")
   }
