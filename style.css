@@ -1,23 +1,52 @@
 
 body {
-  background-image: linear-gradient(180deg, rgba(116,214, 183,1) 0%, rgba(115,220,198,1) 50%, rgb(16, 73, 62) 100%);
+  background-image: linear-gradient(180deg, rgb(132, 245, 209) 0%, rgb(30, 122, 104) 50%, rgb(132, 245, 209) 100%);
   background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
+  background-size: cover;
+  width: cover;
 }
 
 .header {
 background-color: black;
-width: 100%;
-margin-top: -10px;
+background-size: cover;
 height: 600px;
+margin-top: -10px;
+display: grid;
+grid-template-rows:auto;
+grid-template-columns: auto 400px 400px 400px auto;
+grid-template-areas: "hex head kat";
+
 }
 
-img.logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px;
+.header #hex{
+  grid-area: hex;
+  font-family: Hill House;
+  font-size: 160px;
+  color: white;
+  grid-row: 1;
+  grid-column: 2;
+  margin-left: 120px;
+  margin-top: 300px;
+
+}
+
+.header #head{
+  grid-area: head;
+  grid-row: 1;
+  grid-column: 3;
+  margin-left: 40px;
+  margin-top: 100px;
+}
+
+.header #kat{
+  grid-area: hex;
+  font-family: Hill House;
+  font-size: 160px;
+  color: white;
+  grid-row: 1;
+  grid-column: 4;
+  margin-left: 80px;
+  margin-top: 300px;
 }
 
 .nav {
@@ -46,7 +75,7 @@ img.logo{
   grid-column-end: span 4;
   font-family: Hill House;
   font-size: 40px;
-  color: white;
+  color: black;
   grid-column-start: 2 span 4;
 }
 
@@ -60,15 +89,11 @@ img.logo{
   position: relative;
   column-gap: 10px;
   row-gap: 10px;
-  grid-template-rows: auto auto auto auto auto auto auto auto;
-  grid-template-columns: 10% 25% 30% 25% 10%;
+  grid-template-rows: auto;
+  grid-template-columns: auto 360px 600px auto;
   grid-template-areas: 
 "winona about about"
-"subheader subheader subheader"
-"dasa dasatitle dasatitle"
-"dasa dasadescript dasadescript"
-"vtitle vtitle vicinidad"
-"vdescript vdescript vicinidad"
+
 }
 
   
@@ -76,7 +101,6 @@ img.logo{
   #main #about { 
     grid-area: about;
     grid-column-start: 3;
-    grid-column-end: span 4;
     margin-left: 15px;
     font-family: futura PT; 
     font-weight: 350;
@@ -90,85 +114,90 @@ img.logo{
   #main #winona {
     grid-area: winona;
     grid-column-start: 2;
-    align-self: end;
-    justify-self: end;
-    margin-top: 40px
+    object-position: right;
+    margin-top: 40px;
+    box-shadow: 8px 8px rgba(0,0,0);
 
   }
   
   
   
-  #main #subheader {
-    grid-area: subheader;
-    grid-column-start: 3;
-    grid-column-end: span 4;
+  #subheader {
+    text-align: center;
     font-family: Hill House;
     font-size: 40px;
-    color: white;
+    color: rgba();
+    margin-top: 100px;
+    margin-bottom: 100px;
+ 
   }
   
-  
-  #main #dasatitle{
-    grid-area: dasatitle;
-    grid-column-start: 4;
-    justify-self: start;
-    font-family: futura PT;
-    font-weight: 300;
-    font-size: 40px;
-    text-align: center;
-    color: white;
-    margin-top: 30px;
-  }
-  
-  #main #dasa{
-    grid-area: dasa;
-    grid-column-start: 2;
-    grid-column-end: span 3;
-    
-   
-  }
-  
-  #main #dasadescript{
-    grid-area: dasadescript;
-    grid-column-start: 4;
-    align-self: start;
-    justify-self: end;
-    font-family: futura PT; 
-    font-weight: 350;
-    font-size: 22px;
-    color: white;
-  }
-  
-  
-    
-  #main  #vicinidad{
-    grid-area: vicinidad;
-    grid-column-start: 4;
-    justify-self: start;  
-    margin-right: 10px;
+  #project{
+    display: grid;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    column-gap: 10px;
+    row-gap: 30px;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 1fr 500px 500px 1fr;
+    grid-template-areas: 
+  "dasa dasadescript"
+  "vdescript vicinidad";
+
   }
 
-  #main #vtitle{
-      grid-area: vtitle;
-      grid-column-start: 3;
-      justify-self: start;
-      align-self: end;
+  #project #dasa{
+    grid-area: dasa;
+    grid-column-start: 2;
+    grid-row-start: 1;  
+  }
+
+  #project .dasadescript{
+    grid-area: dasadescript;
+    grid-column-start: 3;
+    grid-row: 1;
+    margin-left: 10px;
+  }
+
+ #dasadescript{
+    font-family: futura PT;
+    font-size: 22px;
+    font-weight: 350;
+    color: white;
+  }
+
+  #dasatitle{
+    font-family: futura PT;
+    font-size: 36px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    box-shadow: black 2px 2px;
+  }
+    
+
+  #project  #vicinidad{
+    grid-area: vicinidad;
+    grid-column: 3;
+    grid-row: 2;
+    margin-right: 10px;
+  }
+  #vtitle{
       font-family: futura PT;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 40px;
       text-align: center;
       color: white;
-      margin-top: 30px;
-    }
-  
-    #main #geo{
-      grid-area: geo;
-      grid-column-start: 2;
+      box-shadow: black 2px 2px;
+
     }
 
-    #main  #vdescript{
+    #project  .vdescript{
       grid-area: vdescript;
-      grid-column-start: 3;
+      grid-column: 2;
+      grid-row: 2;
       justify-self: end;
       font-family: futura PT; 
       font-weight: 350;
@@ -184,8 +213,91 @@ img.logo{
       background-size: 800px;
       align-items: center;
       position: relative;
-      column-gap: 10px;
+      column-gap: 50px;
       row-gap: 10px;
-      grid-template-rows: auto auto auto auto auto auto auto auto;
-      grid-template-columns: 10% 25% 30% 25% 10%;
-      grid-template-areas: 
+      margin-bottom: 100px;
+      align-content: start;
+      grid-template-rows: 800px;
+      grid-template-columns: auto 400px 400px auto;
+     grid-template-areas: 
+     "alsowrite alsowrite"
+     "lpreview strongathletic";
+    }
+
+
+    #writing #lpreview {
+      grid-row: 1;
+      grid-column:2;
+    
+    }
+
+    h3{
+      font-family: futura PT;
+      font-size: 36px;
+      font-weight: 400;
+      color: white;
+      text-align: center;
+
+    }
+    p{
+      font-family: futura PT;
+      font-size: 22px;
+      font-weight: 350;
+      color: white;
+      text-align: left;
+     
+    }
+
+    #omelogo{
+    box-shadow:white 5px 5px;
+    }
+
+    #samilogo{
+      box-shadow: white 5px 5px;
+    }
+
+    #ome{
+      box-shadow: white 2px 2px;
+    }
+
+    #sami{
+      box-shadow: white 2px 2px;
+    }
+
+    #writing #strongathletic{
+      grid-row: 1;
+      grid-column: 3;
+    }
+
+    a{
+      font-family: futura PT;
+      font-size: 18px;
+      font-weight: 180;
+      color: white;
+    }
+
+    footer{
+      background-color: black;
+      background-size: cover;
+      width: 100%;
+      height: 450px;
+      display: inline-block
+    }
+
+    
+ #logosmall{
+  margin-top: 50px;
+  margin-left: 300px;
+
+  
+}
+
+#email{
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+#ig{
+  margin-bottom: 50px;
+}
+
