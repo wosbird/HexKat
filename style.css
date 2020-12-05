@@ -1,6 +1,6 @@
 
 body {
-  background-image: linear-gradient(180deg, rgba(116,214, 183,1) 0%, rgba(115,220,198,1) 50%, rgba(10,39,33,1) 100%);
+  background-image: linear-gradient(180deg, rgba(116,214, 183,1) 0%, rgba(115,220,198,1) 50%, rgb(16, 73, 62) 100%);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -39,60 +39,79 @@ img.logo{
 
 }
 
+  
+#subheader {
+  grid-area: subheader;
+  grid-column-start: 3;
+  grid-column-end: span 4;
+  font-family: Hill House;
+  font-size: 40px;
+  color: white;
+  grid-column-start: 2 span 4;
+}
+
 
 #main{
   display: grid;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 800px;
   align-items: center;
   position: relative;
-  grid-template-rows: 800px auto 200px 600px 200px 600px 200px 600px;
-  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  grid-template-columns: 10% 25% 30% 25% 10%;
   grid-template-areas: 
 "winona about about"
 "subheader subheader subheader"
 "dasa dasatitle dasatitle"
 "dasa dasadescript dasadescript"
-"project3 project3 project3"
 "vtitle vtitle vicinidad"
 "vdescript vdescript vicinidad"
-
-  
 }
 
   
  
   #main #about { 
     grid-area: about;
+    grid-column-start: 3;
+    grid-column-end: span 4;
+    margin-left: 15px;
     font-family: futura PT; 
     font-weight: 350;
     font-size: 22px;
     color: white;
     text-align: left;
-  
     margin-top: 100px;
     height: auto;
   
   }
   #main #winona {
-grid-area: winona;
-   margin-right: 10px;
+    grid-area: winona;
+    grid-column-start: 2;
+    align-self: end;
+    justify-self: end;
+    margin-top: 40px
+
   }
   
   
   
   #main #subheader {
     grid-area: subheader;
+    grid-column-start: 3;
+    grid-column-end: span 4;
     font-family: Hill House;
     font-size: 40px;
-    text-align: center;
     color: white;
   }
   
   
   #main #dasatitle{
     grid-area: dasatitle;
+    grid-column-start: 4;
+    justify-self: start;
     font-family: futura PT;
     font-weight: 300;
     font-size: 40px;
@@ -103,11 +122,17 @@ grid-area: winona;
   
   #main #dasa{
     grid-area: dasa;
-    margin-left: 10px;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    
+   
   }
   
   #main #dasadescript{
     grid-area: dasadescript;
+    grid-column-start: 4;
+    align-self: start;
+    justify-self: end;
     font-family: futura PT; 
     font-weight: 350;
     font-size: 22px;
@@ -116,8 +141,18 @@ grid-area: winona;
   
   
     
+  #main  #vicinidad{
+    grid-area: vicinidad;
+    grid-column-start: 4;
+    justify-self: start;  
+    margin-right: 10px;
+  }
+
   #main #vtitle{
       grid-area: vtitle;
+      grid-column-start: 3;
+      justify-self: start;
+      align-self: end;
       font-family: futura PT;
       font-weight: 300;
       font-size: 40px;
@@ -125,14 +160,16 @@ grid-area: winona;
       color: white;
       margin-top: 30px;
     }
-    
-    #main  #vicinidad{
-      grid-area: vicinidad;
-      margin-right: 10px;
+  
+    #main #geo{
+      grid-area: geo;
+      grid-column-start: 2;
     }
-    
+
     #main  #vdescript{
       grid-area: vdescript;
+      grid-column-start: 3;
+      justify-self: end;
       font-family: futura PT; 
       font-weight: 350;
       font-size: 22px;
@@ -140,3 +177,15 @@ grid-area: winona;
     }
 
 
+    #writing{
+      display: grid;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 800px;
+      align-items: center;
+      position: relative;
+      column-gap: 10px;
+      row-gap: 10px;
+      grid-template-rows: auto auto auto auto auto auto auto auto;
+      grid-template-columns: 10% 25% 30% 25% 10%;
+      grid-template-areas: 
