@@ -301,3 +301,8 @@ grid-template-areas: "hex head kat";
   margin-bottom: 50px;
 }
 
+@font-face {
+  font-family: "Hill House";
+  src: url("css/fonts/HillHouseMedium-axBgg.otf") format("opentype"),
+ 
+  }
