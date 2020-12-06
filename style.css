@@ -309,10 +309,10 @@ grid-template-areas: "hex head kat";
 
   @font-face{
     font-family: "futura PT book";
-    src: url("../HexKat/fonts/FuturaPTBook.otf") format("opentype")
+    src: url("../HexKat/fonts/FuturaPTBook.otf") format("opentype");
   }
 
   @font-face{
     font-family: "futura PT light";
-    src: url("../HexKat/fonts/FuturaPTlight.otf") format("opentype")
+    src: url("../HexKat/fonts/FuturaPTlight.otf") format("opentype");
   }
