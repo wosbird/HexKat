@@ -25,7 +25,7 @@ grid-template-areas: "hex head kat";
   color: white;
   grid-row: 1;
   grid-column: 2;
-  margin-left: 120px;
+  margin-left: 270px;
   margin-top: 300px;
 
 }
@@ -72,6 +72,12 @@ grid-template-areas: "hex head kat";
 
 }
 
+a:link{
+  color: #ffffff; 
+  font-family: deco; 
+  font-size: 44px;
+  text-decoration: none;
+}
   
 .subheader {
   text-align: center;;
@@ -318,18 +324,18 @@ grid-template-areas: "hex head kat";
 
 @font-face {
   font-family: "deco";
-  src: url("../HexKat/fonts/paulistana_deco.ttf");
+  src: url("../fonts/paulistana_deco.ttf");
  
   }
 
   @font-face{
     font-family: "futura PT book";
-    src: url("../HexKat/fonts/FuturaPTBook.otf") format("opentype");
+    src: url("../fonts/FuturaPTCondBook.otf");
   }
 
   @font-face{
     font-family: "futura PT light";
-    src: url("../HexKat/fonts/FuturaPTlight.otf") format("opentype");
+    src: url("../fonts/FuturaPTLight.otf");
   }
 
 
@@ -340,7 +346,7 @@ grid-template-areas: "hex head kat";
 
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
 
 
   .header {

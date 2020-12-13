@@ -1,0 +1,294 @@
+
+body {
+  background-image: linear-gradient(180deg, rgb(132, 245, 209) 0%, rgb(30, 122, 104) 50%, rgb(132, 245, 209) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: cover;
+}
+
+.header {
+background-color: black;
+background-size: cover;
+height: 600px;
+margin-top: -10px;
+display: grid;
+grid-template-rows:auto;
+grid-template-columns: auto 400px 400px 400px auto;
+grid-template-areas: "hex head kat";
+
+}
+
+.header #hex{
+  grid-area: hex;
+  font-family: deco;
+  font-size: 160px;
+  color: white;
+  grid-row: 1;
+  grid-column: 2;
+  margin-left: 120px;
+  margin-top: 300px;
+
+}
+
+.header #head{
+  grid-area: head;
+  grid-row: 1;
+  grid-column: 3;
+  margin-left: 40px;
+  margin-top: 100px;
+}
+
+.mobileheader{
+  display: none;
+}
+
+.header #kat{
+  grid-area: hex;
+  font-family: deco;
+  font-size: 160px;
+  color: white;
+  grid-row: 1;
+  grid-column: 4;
+  margin-left: 80px;
+  margin-top: 300px;
+}
+
+.nav {
+  background-color: #000000; 
+  height: 50px;
+  color: #ffffff; 
+  font-family: deco; 
+  font-size: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+  margin-top: -60px;
+}
+
+.nav li {
+  display: inline; 
+  padding: 40px; 
+
+}
+
+h1{
+  font-family: deco;
+  font-size: 60px;
+  color: White;
+  text-align: center;
+}  
+
+h2{
+  font-family: deco;
+  font-size: 40px;
+  color: white;
+}
+
+p{
+  font-family: futura PT light;
+  color: white;
+  font-size: 24px;
+}
+
+.skills{
+  display: block;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+.uxskills{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 400px 200px;
+  column-gap: 40px;
+  grid-template-areas: 
+  "iaimg usabilityimg pdimg compimg"
+  "iah2 usability2  pd2 comp2"
+  "iap  usabilityp  pdp compp"
+  ;
+}
+
+
+.IA h2{
+  grid-area: iah2;
+  grid-row: 1;
+  grid-column: 1;
+  text-align: center;
+}
+
+.IA p{
+  grid-area: iap;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.IA img{
+  grid-area: iaimg;
+  grid-row: 3;
+  grid-column: 1;
+  width: 60%;
+  margin-right: auto;
+  margin-left: 50px;
+
+}
+.usability h2{
+  grid-area: usability2;
+  grid-row: 1;
+  grid-column: 2;
+  text-align: center;
+}
+
+.usability p{
+  grid-area: usabilityp;
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.usability img{
+  grid-area: iaimg;
+  grid-row: 3;
+  grid-column: 2;
+  width: 60%;
+  margin-right: auto;
+  margin-left: 50px;
+ 
+}
+
+.protodiv h2{
+  grid-area: pd2;
+  grid-row: 1;
+  grid-column: 3;
+  text-align: center;
+}
+
+.protodiv p{
+  grid-area: pdp;
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.protodiv img{
+  grid-area: pdimg;
+  grid-row: 3;
+  grid-column: 3;
+  width: 60%;
+  margin-right: auto;
+  margin-left: 50px;
+}
+
+.comp h2{
+  grid-area: comp2;
+  grid-row: 1;
+  grid-column: 4;
+  text-align: center;
+}
+
+.comp p{
+  grid-area: compp;
+  grid-row: 2;
+  grid-column: 4;
+}
+
+.comp img{
+  grid-area: compimg;
+  grid-row: 3;
+  grid-column: 4;
+  width: 60%;
+  margin-right: auto;
+  margin-left: 50px;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 500px;
+  background-color: #000000;
+
+}
+.projects {
+  margin: 20px;
+  position: relative;
+  width: 30%;
+}
+.project-image {
+  width: auto;
+  border-radius: 8px;
+
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color:rgb(132, 245, 209);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.image-overlay:hover {
+  opacity: 1;
+}
+.image-title {
+  font-family: 'deco';
+  font-size: 2em;
+}
+.image-description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+  color: #F2F2F2;
+  font-size: 20px
+}
+
+
+footer{
+  background-color: black;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  display: inline-block;
+}
+
+
+#logosmall{
+margin-top: 50px;
+margin-left: 300px;
+
+
+}
+
+#email{
+margin-right: 20px;
+margin-bottom: 50px;
+}
+
+#ig{
+margin-bottom: 50px;
+}
+
+
+@font-face {
+  font-family: "deco";
+  src: url("../fonts/paulistana_deco.ttf");
+ 
+  }
+
+  @font-face{
+    font-family: "futura PT book";
+    src: url("../fonts/FuturaPTCondBook.otf");
+  }
+
+  @font-face{
+    font-family: "futura PT light";
+    src: url("../fonts/FuturaPTLight.otf");
+  }
