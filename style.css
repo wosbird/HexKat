@@ -20,7 +20,7 @@ grid-template-areas: "hex head kat";
 
 .header #hex{
   grid-area: hex;
-  font-family: Hill House;
+  font-family: deco;
   font-size: 160px;
   color: white;
   grid-row: 1;
@@ -38,9 +38,13 @@ grid-template-areas: "hex head kat";
   margin-top: 100px;
 }
 
+.mobileheader{
+  display: none;
+}
+
 .header #kat{
   grid-area: hex;
-  font-family: Hill House;
+  font-family: deco;
   font-size: 160px;
   color: white;
   grid-row: 1;
@@ -53,7 +57,7 @@ grid-template-areas: "hex head kat";
   background-color: #000000; 
   height: 50px;
   color: #ffffff; 
-  font-family: Hill House; 
+  font-family: deco; 
   font-size: 44px;
   margin-left: auto;
   margin-right: auto;
@@ -69,18 +73,17 @@ grid-template-areas: "hex head kat";
 }
 
   
-#subheader {
-  grid-area: subheader;
-  grid-column-start: 3;
-  grid-column-end: span 4;
-  font-family: Hill House;
+.subheader {
+  text-align: center;;
+  font-family: deco;
   font-size: 40px;
   color: black;
-  grid-column-start: 2 span 4;
+
+
 }
 
 
-#main{
+.main{
   display: grid;
   background-position: center;
   background-repeat: no-repeat;
@@ -98,7 +101,7 @@ grid-template-areas: "hex head kat";
 
   
  
-  #main #about { 
+  .main #about { 
     grid-area: about;
     grid-column-start: 3;
     margin-left: 15px;
@@ -111,7 +114,7 @@ grid-template-areas: "hex head kat";
     height: auto;
   
   }
-  #main #winona {
+  .main #winona {
     grid-area: winona;
     grid-column-start: 2;
     object-position: right;
@@ -120,19 +123,28 @@ grid-template-areas: "hex head kat";
 
   }
   
-  
+  .mainmobile{
+    display: none;
+  }
+  .button{
+    display: none;
+  }
   
   #subheader {
     text-align: center;
-    font-family: Hill House;
+    font-family: deco;
     font-size: 40px;
     color: rgba();
     margin-top: 100px;
     margin-bottom: 100px;
  
   }
+
+  .projectmobile{
+    display: none;
+  }
   
-  #project{
+  .project{
     display: grid;
     background-position: center;
     background-repeat: no-repeat;
@@ -148,13 +160,13 @@ grid-template-areas: "hex head kat";
 
   }
 
-  #project #dasa{
+  .project #dasa{
     grid-area: dasa;
     grid-column-start: 2;
     grid-row-start: 1;  
   }
 
-  #project .dasadescript{
+  .project .dasadescript{
     grid-area: dasadescript;
     grid-column-start: 3;
     grid-row: 1;
@@ -178,7 +190,7 @@ grid-template-areas: "hex head kat";
   }
     
 
-  #project  #vicinidad{
+  .project  #vicinidad{
     grid-area: vicinidad;
     grid-column: 3;
     grid-row: 2;
@@ -194,7 +206,7 @@ grid-template-areas: "hex head kat";
 
     }
 
-    #project  .vdescript{
+    .project  .vdescript{
       grid-area: vdescript;
       grid-column: 2;
       grid-row: 2;
@@ -206,7 +218,7 @@ grid-template-areas: "hex head kat";
     }
 
 
-    #writing{
+    .writing{
       display: grid;
       background-position: center;
       background-repeat: no-repeat;
@@ -224,8 +236,11 @@ grid-template-areas: "hex head kat";
      "lpreview strongathletic";
     }
 
+    .writingmobile{
+      display: none;
+    }
 
-    #writing #lpreview {
+    .writing #lpreview {
       grid-row: 1;
       grid-column:2;
     
@@ -264,7 +279,7 @@ grid-template-areas: "hex head kat";
       box-shadow: white 2px 2px;
     }
 
-    #writing #strongathletic{
+    .writing #strongathletic{
       grid-row: 1;
       grid-column: 3;
     }
@@ -281,7 +296,7 @@ grid-template-areas: "hex head kat";
       background-size: cover;
       width: 100%;
       height: 450px;
-      display: inline-block
+      display: inline-block;
     }
 
     
@@ -302,8 +317,8 @@ grid-template-areas: "hex head kat";
 }
 
 @font-face {
-  font-family: "Hill House";
-  src: url("../HexKat/fonts/HillHouseMedium-axBgg.otf") format("opentype");
+  font-family: "deco";
+  src: url("../HexKat/fonts/paulistana_deco.ttf");
  
   }
 
@@ -316,3 +331,169 @@ grid-template-areas: "hex head kat";
     font-family: "futura PT light";
     src: url("../HexKat/fonts/FuturaPTlight.otf") format("opentype");
   }
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+
+
+  .header {
+    display: none;    
+    }
+
+  .nav {
+    display: none;
+    }
+
+
+  .main {
+    display:none;
+    }
+
+
+    .project{
+      display: none;
+    }
+
+    
+    .writing{
+      display: none;
+
+    }
+
+  .mobileheader{
+    display: block;
+    background-color: black;
+    height: 680px;
+    width: 100%;
+  }
+
+  .mobileheader #logomobile{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+      
+  .mobileheader .mobilenav{
+      float: right;
+      margin-right: 10px;
+   }
+     
+
+  
+
+   #mobileme {
+    display: block;
+    margin-top: 40px;
+    box-shadow: 8px 8px rgba(0,0,0);
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .mainmobile{
+    display: block;
+  }
+
+  button{
+    background-color: black;
+    box-shadow: 5px 5px white;
+    color:rgb(132, 245, 209);
+    border: 1px white;
+    height: 60px;
+    width: 200px;
+    font-family: deco;
+    font-size: 36px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+      
+    
+    .subheader {
+        text-align: center;
+        font-family: deco;
+        font-size: 40px;
+        color: rgba();
+        margin-top: 100px;
+        margin-bottom: 30px;
+     
+      }
+      
+
+      .projectmobile{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    
+      }
+    
+      .project-image{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+      }
+
+  
+        .image-title{
+          margin-top: 30px;
+          font-size: 36px;
+          font-family: futura PT;
+          color: white;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        .image-description{
+          font-size: 22px;
+          font-family: futura PT;
+          color: white;
+          text-align: center;
+        }
+
+
+        .writingmobile{
+          display: block;
+        }
+
+
+        
+    footer{
+      margin-top: 60px;
+      background-color: black;
+      background-size: cover;
+      width: 100%;
+      height: 300px;
+      display: inline-block;
+    }
+
+    
+#logosmall{
+  display: none;
+}
+
+#email{
+  margin-top: 100px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  margin-left:  30%;
+
+}
+
+#ig{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-right: 25%;
+}
+
+
+
+      }
